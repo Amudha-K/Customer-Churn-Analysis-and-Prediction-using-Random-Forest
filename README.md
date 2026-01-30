@@ -8,7 +8,7 @@
 ● Understand customer churn patterns across demographics, services, and contracts  
 ● Identify key factors influencing churn  
 ● Predict potential churners using a Random Forest classification model  
-● Enable data-driven customer retention strategies
+● Enable data-driven strategies by identifying "High Risk" customers.
 
 ## Tools & Technologies
 
