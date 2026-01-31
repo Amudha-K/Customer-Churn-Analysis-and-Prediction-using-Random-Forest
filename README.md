@@ -1,13 +1,14 @@
 # Customer-Churn-Analysis-and-Prediction-using-Random-Forest
 ## Project Overview
-● This project analyzes customer churn behavior and predicts customers who are likely to churn using historical data  
-● It combines SQL-based data preparation, Power BI dashboards, and a Random Forest machine learning model  
-● The goal is to help businesses reduce churn by identifying high-risk customers early  
+● This project analyzes customer churn behavior and predicts customers who are likely to churn using historical data.  
+● It combines SQL-based data preparation, Power BI dashboards, and a Random Forest machine learning model.   
+● The goal is to help businesses reduce churn by identifying high-risk customers early. 
 
 ## Business Objectives
-● Understand customer churn patterns across demographics, services, and contracts  
-● Identify key factors influencing churn  
-● Predict potential churners using a Random Forest classification model  
+● Understand customer churn patterns across demographics, services, and contracts.  
+● Identify key factors influencing churn.  
+● Predict potential churners using a Random Forest classification model.  
+● Segment customers into Low, Medium, and High churn risk.  
 ● Enable data-driven strategies by identifying "High Risk" customers.
 
 ## Tools & Technologies
@@ -35,34 +36,66 @@ pip install pandas numpy scikit-learn matplotlib seaborn
 6. Run the Python script to generate churn predictions using Random Forest
 
 ## Key Business Insights
-● Customers on month-to-month contracts show the highest churn rate  
-● Short-tenure customers are more likely to churn  
-● Fiber optic internet users have higher churn probability  
-● Customers without value-added services are at higher risk  
-● Certain states and age groups consistently show higher churn
+
+● Contract Risk: Month-to-month contracts drive the highest churn and revenue risk.  
+● Tenure Impact: Short-tenure customers are significantly more likely to churn.  
+● Risk Tiers: Random Forest identified a High-Risk segment (>60% churn probability) for targeted retention.  
+● Service Impact: Fiber Optic users without value-added services show higher churn risk.  
 
 ## Dashboard Preview
 ### Page 1: Churn Analysis Summary
 
-● Overview of total customers, churned customers, and churn rate  
-● Churn distribution by gender, age group, and tenure  
-● Contract type and payment method impact on churn  
-● State-wise and service-wise churn analysis  
-● Churn category and churn reason insights  
+● Overview of total customers, churned customers, and churn rate.    
+● Churn distribution by gender, age group, and tenure.    
+● Contract type and payment method impact on churn.    
+● State-wise and service-wise churn analysis.    
+● Churn category and churn reason insights.    
 
 ### Page 2: Churn Prediction Dashboard
 
-● Total number of customers predicted to churn  
-● High-risk customer distribution by age, tenure, and contract type  
-● State-wise churn prediction analysis  
-● Payment method and service impact on churn probability  
-● Customer-level churn risk details for targeted retention actions    
+● Total number of customers predicted to churn.   
+● High-risk customer distribution by age, tenure, and contract type.    
+● State-wise churn prediction analysis.    
+● Payment method and service impact on churn probability.    
+● Customer-level churn risk details for targeted retention actions.   
+
+### Page 3: Churn Analysis – Risk Insights 
+
+● Churn risk segmentation into Low, Medium, and High Risk customer groups.  
+● Key risk drivers analysis based on contract type, tenure, services, and billing behavior.  
+● High-risk customer concentration by state and demographic segments.  
+● Service-level risk insights highlighting Fiber Optic users and customers without value-added services.  
+● Actionable retention insights to support targeted offers, proactive support, and churn prevention strategies.  
+
+### Tooltip
+Purpose: Provide contextual explanations without cluttering dashboards.  
+Includes:  
+● Detailed churn reason descriptions.  
+● Churn contribution by reason.  
+● On-hover insights for charts and KPIs.  
+
+### Machine Learning – Customer Churn Prediction (Python)
+
+● Used Random Forest Classifier for churn prediction.  
+● Encoded categorical variables and defined churn target (0 = Stayed, 1 = Churned).  
+● Split data into 80% training and 20% testing.  
+● Evaluated model using Confusion Matrix and Classification Report.  
+● Identified key features impacting churn using feature importance.
+
+#### Prediction & Risk Segmentation:  
+● Generated churn probability scores for new and active customers.  
+● Classified customers into:  
+   ● Low Risk: 0–30%  
+   ● Medium Risk: 30–60%  
+   ● High Risk: >60%  
+● Integrated risk segments into Power BI dashboards for actionable retention insights.
 
 ## Project Outcome
-● Delivered an end-to-end churn analytics solution  
-● Combined SQL, Power BI, and Random Forest modeling  
-● Provided actionable insights for customer retention  
-● Demonstrated strong analytical and machine learning skills  
+● Delivered an end-to-end churn analytics solution.    
+● Enabled customer-level churn prediction.  
+● Added risk-based segmentation and revenue impact analysis.     
+● Provided actionable insights for customer retention to identify and save high-value customers.      
+ 
 
 ## Conclusion
-This project combines data analysis and Random Forest-based prediction to identify customer churn patterns and high-risk customers. The insights derived from Power BI dashboards enable organizations to take timely actions to improve customer retention.  
+This project combines data analysis and Random Forest-based prediction to identify churn patterns and high-risk customers.The Power BI dashboards and ML predictions enable organizations to take timely, data-driven retention actions, reducing customer churn and revenue loss.  
